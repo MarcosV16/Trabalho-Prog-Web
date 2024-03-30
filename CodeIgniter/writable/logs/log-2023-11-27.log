@@ -1,0 +1,20 @@
+CRITICAL - 2023-11-27 14:00:02 --> Undefined variable: titulo
+#0 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/app/Views/blocos_form.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/client...', 8, Array)
+#1 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/View/View.php(210): include('/var/www/client...')
+#2 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/Common.php(1089): CodeIgniter\View\View->render('blocos_form', Array, true)
+#4 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/app/Controllers/Blocos.php(10): view('blocos_form', Array)
+#5 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/CodeIgniter.php(832): App\Controllers\Blocos->index()
+#6 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blocos))
+#7 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-27 14:19:51 --> Invalid file: blocos_del.php
+#0 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('blocos_del.php')
+#1 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/Common.php(1089): CodeIgniter\View\View->render('blocos_del', Array, true)
+#2 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/app/Controllers/Blocos.php(72): view('blocos_del', Array)
+#3 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/CodeIgniter.php(832): App\Controllers\Blocos->deletar('13')
+#4 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blocos))
+#5 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

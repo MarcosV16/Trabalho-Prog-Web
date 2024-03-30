@@ -1,0 +1,72 @@
+ERROR - 2023-11-21 13:22:22 --> Table 'c2adsgrupo10.Salas' doesn't exist
+CRITICAL - 2023-11-21 13:22:22 --> Table 'c2adsgrupo10.Salas' doesn't exist
+#0 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/app/Controllers/SalasExibir.php(8): CodeIgniter\BaseModel->findAll()
+#7 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/CodeIgniter.php(832): App\Controllers\SalasExibir->index()
+#8 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SalasExibir))
+#9 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-11-21 14:06:23 --> Invalid file: salas_form.php
+#0 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('salas_form.php')
+#1 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/Common.php(1089): CodeIgniter\View\View->render('salas_form', Array, true)
+#2 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/app/Controllers/Blocos.php(47): view('salas_form', Array)
+#3 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/CodeIgniter.php(832): App\Controllers\Blocos->inserir()
+#4 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blocos))
+#5 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-11-21 17:15:18 --> Undefined variable: sala
+#0 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/app/Views/blocosdel.php(81): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/client...', 81, Array)
+#1 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/View/View.php(210): include('/var/www/client...')
+#2 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/Common.php(1089): CodeIgniter\View\View->render('blocosdel', Array, true)
+#4 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/app/Controllers/BlocosDeletar.php(10): view('blocosdel', Array)
+#5 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/CodeIgniter.php(832): App\Controllers\BlocosDeletar->index()
+#6 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlocosDeletar))
+#7 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-21 17:15:52 --> Undefined variable: sala
+#0 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/app/Views/blocosdel.php(81): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/client...', 81, Array)
+#1 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/View/View.php(210): include('/var/www/client...')
+#2 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/Common.php(1089): CodeIgniter\View\View->render('blocosdel', Array, true)
+#4 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/app/Controllers/BlocosDeletar.php(10): view('blocosdel', Array)
+#5 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/CodeIgniter.php(832): App\Controllers\BlocosDeletar->index()
+#6 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlocosDeletar))
+#7 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-21 18:13:08 --> Invalid file: blocos_del.php
+#0 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('blocos_del.php')
+#1 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/Common.php(1089): CodeIgniter\View\View->render('blocos_del', Array, true)
+#2 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/app/Controllers/BlocosDeletar.php(10): view('blocos_del', Array)
+#3 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/CodeIgniter.php(832): App\Controllers\BlocosDeletar->index()
+#4 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlocosDeletar))
+#5 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-11-21 18:13:17 --> Invalid file: blocos_del.php
+#0 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('blocos_del.php')
+#1 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/Common.php(1089): CodeIgniter\View\View->render('blocos_del', Array, true)
+#2 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/app/Controllers/BlocosDeletar.php(10): view('blocos_del', Array)
+#3 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/CodeIgniter.php(832): App\Controllers\BlocosDeletar->index()
+#4 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlocosDeletar))
+#5 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-11-21 18:13:46 --> Invalid file: blocos_del.php
+#0 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('blocos_del.php')
+#1 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/Common.php(1089): CodeIgniter\View\View->render('blocos_del', Array, true)
+#2 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/app/Controllers/BlocosDeletar.php(10): view('blocos_del', Array)
+#3 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/CodeIgniter.php(832): App\Controllers\BlocosDeletar->index()
+#4 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlocosDeletar))
+#5 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/clients/client2/web2/web/sistema/adsgrupo10/CodeIgniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
